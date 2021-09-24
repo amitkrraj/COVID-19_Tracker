@@ -22,13 +22,13 @@ const Covid = () => {
     return (
         <>
         <section>
-            <h2>Live COVID19 Tracker</h2>
+            <h2>Live COVID19 Tracker for India</h2>
             <ul>
                 <li className="card">
                     <div className="card__main">
                         <div className="card__inner">
-                            <p className="card__name">Country</p>
-                            <p className="card__total card__small">INDIA</p>
+                            <p className="card__name">Total Active</p>
+                            <p className="card__total card__small">{data.active}</p>
                         </div>
                     </div>
                 </li>
@@ -51,28 +51,27 @@ const Covid = () => {
                 <li className="card">
                     <div className="card__main">
                         <div className="card__inner">
+                            <p className="card__name">Total Delta Confirmed</p>
+                            <p className="card__total card__small">{data.deltaconfirmed}</p>
+                        </div>
+                    </div>
+                </li>
+                <li className="card">
+                    <div className="card__main">
+                        <div className="card__inner">
+                            <p className="card__name">Total Delta Recovered</p>
+                            <p className="card__total card__small">{data.deltarecovered}</p>
+                        </div>
+                    </div>
+                </li>
+                <li className="card">
+                    <div className="card__main">
+                        <div className="card__inner">
                             <p className="card__name">Total Deaths</p>
                             <p className="card__total card__small">{data.deaths}</p>
                         </div>
                     </div>
                 </li>
-                <li className="card">
-                    <div className="card__main">
-                        <div className="card__inner">
-                            <p className="card__name">Total Active</p>
-                            <p className="card__total card__small">{data.active}</p>
-                        </div>
-                    </div>
-                </li>
-                <li className="card">
-                    <div className="card__main">
-                        <div className="card__inner">
-                            <p className="card__name">Last Updated</p>
-                            <p className="card__total card__small">{data.lastupdatedtime}</p>
-                        </div>
-                    </div>
-                </li>
-
             </ul>
         </section>
         </>
