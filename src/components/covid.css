@@ -1,0 +1,52 @@
+section{
+    background-color: rgb(68, 66, 66);
+    width: 100%;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+    min-height: 100vh;
+    align-items: center;
+
+}
+
+p, h2 {
+    color: white;
+}
+span{
+    margin: 5px;
+}
+
+ul{
+    width: 80%;
+    margin: auto;
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    display: block;
+}
+.card__main {
+    height: 150px;
+    width: 300px;
+    margin: 25px;
+    align-items: center;
+    background-color: rgb(116, 116, 209);
+}
+
+.card__name{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight:normal;
+}
+
+.card__name span {
+    font-size: 15px;
+}
+
+.card__total {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+
+}
